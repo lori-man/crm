@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:component-scan base-package="com.lori.service,com.lori.dao"></context:component-scan>
+    
+    <!--<bean id="datasource1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="url" value="${url}"></property>
+        <property name="username" value="${username}"></property>
+        <property name="password" value="${password}"></property>
+        <property name="driverClassName" value="${driver}"></property>
+    </bean>-->
+
+    <!--c3p0连接处配置-->
+    <bean id="datasource2" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/crm?serverTimezone=UTC"/>
+        <property name="user" value="root"/>
+        <property name="password" value="adg123"/>
+
+        <!-- 初始化建立的连接数 -->
+        <property name="initialPoolSize" value="10" />
+        <!-- 最大空闲时间，120秒内未被使用的连接将被丢弃 -->
+        <property name="maxIdleTime" value="120" />
+        <!-- 当连接池耗尽，且未达到最大连接数时，一次获取的连接数 -->
+        <property name="acquireIncrement" value="2" />
+        <!-- 空闲检查时间间隔， 每隔120秒检查连接池里的空闲连接 ，单位是秒 -->
+        <property name="idleConnectionTestPeriod" value="60" />
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="datasource2"></property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="show_sql">true</prop>
+                <prop key="hibernate.format_sql">true</prop>
+            </props>
+        </property>
+        <property name="mappingResources">
+            <list>
+                <value>com/lori/entity/user.hbm.xml</value>
+                <value>com/lori/entity/basedict.hbm.xml</value>
+                <value>com/lori/entity/customer.hbm.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--为userDao赋值sessionFactory-->
+    <bean id="userDao" class="com.lori.dao.UserDao">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <!--为customerDao赋值sessionFactory-->
+    <bean id="customerDao" class="com.lori.dao.CustomerDao">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <!--为baseDictDao赋值sessionFactory-->
+    <bean id="baseDictDao" class="com.lori.dao.BaseDictDao">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+
+    <!--配置事务管理器-->
+    <!--申明事务管理器-->
+    <bean id="txManger" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <!--开启事务注解事务-->
+    <tx:annotation-driven transaction-manager="txManger"></tx:annotation-driven>
+
+</beans>
