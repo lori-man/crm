@@ -8,15 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3c507fb4-fd49-4fcf-a79f-05426a046505" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/crm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/springMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/springMvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/jsp/customer/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/jsp/customer/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/springMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/springMvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/springMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/springMvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/customer/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/customer/add.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,44 +65,8 @@
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lori/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="springMvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/springMvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/customer/add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpLoadUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lori/utils/UpLoadUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state relative-caret-position="315">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -575,7 +530,7 @@
       <workItem from="1555553394305" duration="31000" />
       <workItem from="1555592745804" duration="371000" />
       <workItem from="1557925017347" duration="2659000" />
-      <workItem from="1558145499096" duration="15223000" />
+      <workItem from="1558145499096" duration="16116000" />
     </task>
     <task id="LOCAL-00001" summary="fourth commit">
       <created>1558147104707</created>
@@ -598,11 +553,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558147782436</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="upload">
+      <created>1558238068320</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558238068321</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100931000" />
+    <option name="totallyTimeSpent" value="101824000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -615,7 +577,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" weight="0.329429" />
@@ -633,11 +594,11 @@
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32796487" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49865952" weight="0.3133236" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.31478772" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49865952" visible="true" weight="0.3133236" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.31478772" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.23592493" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.23592493" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
@@ -717,7 +678,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fourth commit" />
     <MESSAGE value="fifth commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="fifth commit" />
+    <MESSAGE value="upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -926,7 +888,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="106.5" y="108.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
+            <Category />
             <Category>Columns</Category>
           </Categories>
         </state>
@@ -957,13 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="63" lean-forward="true" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1076,10 +1031,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lori/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+        <state relative-caret-position="315">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
