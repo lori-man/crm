@@ -55,7 +55,7 @@
 <BODY>
 	<FORM id=form1 name=form1
 		action="/customer_save"
-		method=post>
+		method=post enctype="multipart/form-data">
 		
 
 		<TABLE cellSpacing=0 cellPadding=0 width="98%" border=0>
@@ -129,6 +129,12 @@
 														style="WIDTH: 180px" maxLength=50 name="custMobile">
 								</td>
 							</TR>
+							<tr>
+								<td rowspan=3>
+									<INPUT  type=file
+											value="浏览" name="upload">
+								</td>
+							</tr>
 
 							<%--<TR>
 								<td>联系地址 ：</td>
@@ -160,6 +166,7 @@
 														value=" 保存 " name=sButton2>
 								</td>
 							</tr>
+
 						</TABLE>
 						
 						

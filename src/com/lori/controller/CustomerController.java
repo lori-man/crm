@@ -3,17 +3,25 @@ package com.lori.controller;
 import com.lori.entity.Customer;
 import com.lori.entity.PageBean;
 import com.lori.service.CustomerService;
+import com.lori.utils.UpLoadUtils;
+import org.apache.commons.fileupload.FileUpload;
+import org.apache.commons.io.FileUtils;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
 
 @Controller
 public class CustomerController {
     @Autowired
     private CustomerService customerService;
+
 
     /**
      * 客户管理，跳转到添加用户页面
@@ -29,10 +37,31 @@ public class CustomerController {
      * @return
      */
     @RequestMapping("/customer_save")
-    public String save(Customer customer) {
+    public String save(Customer customer,@RequestParam("upload")MultipartFile multipartFile) throws IOException {
+
+        if (multipartFile != null) {
+//            System.out.println(multipartFile.toString());
+            String path = "F:/crm";
+
+            //一个目录下存放相同文件名，随机文件名
+            String uuidFileNmae = UpLoadUtils.getUuidFileName(multipartFile.getOriginalFilename());
+
+            String realPath = UpLoadUtils.getPath(uuidFileNmae);
+
+            String url = path + realPath;
+            File file = new File(url);
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+            File dictFile = new File(url + uuidFileNmae);
+            dictFile.createNewFile();
+            multipartFile.transferTo(dictFile);
+//            System.out.println(dictFile.toString());
+
+        }
         System.out.println(customer);
         customerService.save(customer);
-        return "/index";
+        return "welcome";
     }
 
     /**
