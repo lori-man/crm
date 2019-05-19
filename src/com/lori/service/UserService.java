@@ -2,7 +2,7 @@ package com.lori.service;
 
 import com.lori.dao.UserDao;
 import com.lori.entity.User;
-import com.lori.util.MD5Util;
+import com.lori.utils.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;

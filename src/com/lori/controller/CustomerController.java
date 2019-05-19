@@ -4,8 +4,6 @@ import com.lori.entity.Customer;
 import com.lori.entity.PageBean;
 import com.lori.service.CustomerService;
 import com.lori.utils.UpLoadUtils;
-import org.apache.commons.fileupload.FileUpload;
-import org.apache.commons.io.FileUtils;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package com.lori.util;
+package com.lori.utils;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
