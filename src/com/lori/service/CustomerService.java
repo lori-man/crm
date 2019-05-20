@@ -57,4 +57,20 @@ public class CustomerService {
         return pageBean;
     }
 
+    /**
+     * 根据id寻找
+     * @param id
+     */
+    public Customer findById(Long id) {
+        return customerDao.findById(id);
+    }
+
+    /**
+     * 删除
+     *
+     * @param customer
+     */
+    public void delete(Customer customer) {
+        customerDao.delete(customer);
+    }
 }

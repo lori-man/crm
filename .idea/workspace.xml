@@ -7,13 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c507fb4-fd49-4fcf-a79f-05426a046505" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f825847-36c1-48cb-83e0-29f332f58814.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f825847-36c1-48cb-83e0-29f332f58814.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/util/MD5Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/entity/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/controller/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/dao/CustomerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/service/CustomerService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lori/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/customer/list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,39 +71,17 @@
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lori/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-575">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            <state relative-caret-position="138">
+              <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelAndView.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-5.1.1.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-              <folding>
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="springMvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/springMvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+      <file leaf-file-name="cst_customer" pinned="false" current-in-tab="false">
+        <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -111,41 +89,49 @@
       <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lori/entity/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+            <state relative-caret-position="1275">
+              <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
               <folding>
-                <element signature="e#2110#2111#0" expanded="true" />
-                <element signature="e#2142#2143#0" expanded="true" />
-                <element signature="e#2192#2193#0" expanded="true" />
-                <element signature="e#2234#2235#0" expanded="true" />
+                <element signature="e#2230#2231#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.hbm.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml">
+      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+            <state relative-caret-position="331">
+              <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+              <folding>
+                <element signature="e#1634#1635#0" expanded="true" />
+                <element signature="e#1660#1661#0" expanded="true" />
+                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="e#1829#1830#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/customer/add.jsp">
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsp/customer/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+            <state relative-caret-position="138">
+              <caret line="103" column="131" lean-forward="true" selection-start-line="103" selection-start-column="131" selection-end-line="103" selection-end-column="131" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/menu.jsp">
+      <file leaf-file-name="CustomerDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="141" column="87" lean-forward="true" selection-start-line="141" selection-start-column="87" selection-end-line="141" selection-end-column="87" />
+            <state relative-caret-position="181">
+              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+              <folding>
+                <element signature="e#1422#1423#0" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -207,13 +193,10 @@
         <option value="$PROJECT_DIR$/src/com/lori/controller/BaseDictController.java" />
         <option value="$PROJECT_DIR$/src/com/lori/service/BaseDiceService.java" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/PageBean.java" />
-        <option value="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" />
-        <option value="$PROJECT_DIR$/src/com/lori/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/web/menu.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f825847-36c1-48cb-83e0-29f332f58814/console.sql" />
-        <option value="$PROJECT_DIR$/web/jsp/customer/list.jsp" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/Demo.java" />
         <option value="$PROJECT_DIR$/web/jsp/customer/add.jsp" />
         <option value="$PROJECT_DIR$/src/springMvc.xml" />
@@ -221,6 +204,9 @@
         <option value="$PROJECT_DIR$/src/com/lori/entity/Customer.java" />
         <option value="2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer.sql" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml" />
+        <option value="$PROJECT_DIR$/web/jsp/customer/list.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lori/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" />
         <option value="$PROJECT_DIR$/src/com/lori/controller/CustomerController.java" />
       </list>
     </option>
@@ -588,7 +574,7 @@
       <workItem from="1555592745804" duration="371000" />
       <workItem from="1557925017347" duration="2659000" />
       <workItem from="1558145499096" duration="16116000" />
-      <workItem from="1558242381833" duration="4552000" />
+      <workItem from="1558242381833" duration="7175000" />
     </task>
     <task id="LOCAL-00001" summary="fourth commit">
       <created>1558147104707</created>
@@ -632,11 +618,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558242814455</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="upload sql">
+      <created>1558318358016</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558318358016</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106376000" />
+    <option name="totallyTimeSpent" value="108999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,13 +664,13 @@
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.31478772" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32894737" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.22788204" />
       <window_info anchor="bottom" id="Problems" order="14" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Favorites" order="4" sideWeight="0.50213677" side_tool="true" weight="0.23592493" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32894737" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -762,7 +755,8 @@
     <MESSAGE value="fourth commit" />
     <MESSAGE value="fifth commit" />
     <MESSAGE value="upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload" />
+    <MESSAGE value="upload sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload sql" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -791,20 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/customer/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1850">
-          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -856,7 +836,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jquery-1.4.4.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lori/entity/Demo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/lori/controller/BaseDictController.java">
@@ -945,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-5.1.1.RELEASE.jar!/org/springframework/web/multipart/commons/CommonsMultipartFile.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-154">
@@ -1026,26 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/entity/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding>
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#2192#2193#0" expanded="true" />
-            <element signature="e#2234#2235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/sys_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1067,42 +1026,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/customer/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="141" column="87" lean-forward="true" selection-start-line="141" selection-start-column="87" selection-end-line="141" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/springMvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-5.1.1.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1120,10 +1047,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="141" column="87" lean-forward="true" selection-start-line="141" selection-start-column="87" selection-end-line="141" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/customer/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-5.1.1.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/customer/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="103" column="131" lean-forward="true" selection-start-line="103" selection-start-column="131" selection-end-line="103" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+          <folding>
+            <element signature="e#2230#2231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+          <folding>
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+          <folding>
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1829#1830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lori/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="138">
+          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
         </state>
       </provider>
     </entry>

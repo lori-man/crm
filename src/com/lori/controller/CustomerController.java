@@ -86,4 +86,22 @@ public class CustomerController {
         req.setAttribute("pageBean",pageBean);
         return "/jsp/customer/list";
     }
+
+    @RequestMapping("/delete")
+    public String deleteById(String custId) {
+        System.out.println(custId);
+        long id = Long.parseLong(custId);
+        System.out.println(id);
+        Customer customer = customerService.findById(id);
+        System.out.println(customer);
+
+        if (customer.getCustImage() != null) {
+            File file = new File(customer.getCustImage());
+            if (file.exists()) {
+                file.delete();
+            }
+        }
+        customerService.delete(customer);
+        return "welcome";
+    }
 }

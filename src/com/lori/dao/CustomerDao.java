@@ -46,4 +46,12 @@ public class CustomerDao extends HibernateDaoSupport {
         detachedCriteria.setProjection(null);
         return (List<Customer>) getHibernateTemplate().findByCriteria(detachedCriteria,begin,pageSize);
     }
+
+    public Customer findById(Long id) {
+        return getHibernateTemplate().get(Customer.class, id);
+    }
+
+    public void delete(Customer customer) {
+        getHibernateTemplate().delete(customer);
+    }
 }
