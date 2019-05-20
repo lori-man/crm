@@ -35,6 +35,9 @@
         <property name="custMobile" type="string">
             <column name="cust_mobile" length="16"></column>
         </property>
+        <property name="custImage" type="string">
+            <column name="cust_image"></column>
+        </property>
 
         <many-to-one name="baseDicrSource" class="com.lori.entity.BaseDict" column="cust_source"></many-to-one>
         <many-to-one name="baseDicrIndustry" column="cust_industry" class="com.lori.entity.BaseDict"></many-to-one>

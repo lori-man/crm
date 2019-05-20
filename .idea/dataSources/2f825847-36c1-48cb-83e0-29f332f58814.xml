@@ -7,19 +7,19 @@
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <DefaultCasing>lower/lower</DefaultCasing>
     </root>
-    <schema id="2" parent="1" name="aigou">
+    <schema id="2" parent="1" name="bookstore">
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
-    <schema id="3" parent="1" name="bookstore">
-      <Collation>utf8mb4_0900_ai_ci</Collation>
-    </schema>
-    <schema id="4" parent="1" name="crm">
+    <schema id="3" parent="1" name="crm">
       <Current>1</Current>
       <Visible>1</Visible>
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
-    <schema id="5" parent="1" name="information_schema">
+    <schema id="4" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
+    </schema>
+    <schema id="5" parent="1" name="leetcode">
+      <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <schema id="6" parent="1" name="mysql">
       <Collation>utf8mb4_0900_ai_ci</Collation>
@@ -1113,13 +1113,13 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="280" parent="4" name="base_dict">
+    <table id="280" parent="3" name="base_dict">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="281" parent="4" name="cst_customer">
+    <table id="281" parent="3" name="cst_customer">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="282" parent="4" name="sys_user">
+    <table id="282" parent="3" name="sys_user">
       <Collation>utf8_general_ci</Collation>
     </table>
     <column id="283" parent="280" name="dict_id">
@@ -1225,42 +1225,47 @@
       <DataType>varchar(16)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="299" parent="281" name="cust_source">
+    <column id="299" parent="281" name="cust_image">
+      <Position>8</Position>
+      <DataType>varchar(64)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="300" parent="281" name="cust_source">
       <ColNames>cust_source</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="300" parent="281" name="cust_industry">
+    <index id="301" parent="281" name="cust_industry">
       <ColNames>cust_industry</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="301" parent="281" name="cust_level">
+    <index id="302" parent="281" name="cust_level">
       <ColNames>cust_level</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="302" parent="281" name="PRIMARY">
+    <key id="303" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>cust_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="303" parent="281" name="cst_customer_ibfk_1">
+    <foreign-key id="304" parent="281" name="cst_customer_ibfk_1">
       <ColNames>cust_source</ColNames>
       <RefSchemaName>crm</RefSchemaName>
       <RefTableName>base_dict</RefTableName>
       <RefColNames>dict_id</RefColNames>
     </foreign-key>
-    <foreign-key id="304" parent="281" name="cst_customer_ibfk_2">
+    <foreign-key id="305" parent="281" name="cst_customer_ibfk_2">
       <ColNames>cust_industry</ColNames>
       <RefSchemaName>crm</RefSchemaName>
       <RefTableName>base_dict</RefTableName>
       <RefColNames>dict_id</RefColNames>
     </foreign-key>
-    <foreign-key id="305" parent="281" name="cst_customer_ibfk_3">
+    <foreign-key id="306" parent="281" name="cst_customer_ibfk_3">
       <ColNames>cust_level</ColNames>
       <RefSchemaName>crm</RefSchemaName>
       <RefTableName>base_dict</RefTableName>
       <RefColNames>dict_id</RefColNames>
     </foreign-key>
-    <column id="306" parent="282" name="user_id">
+    <column id="307" parent="282" name="user_id">
       <Position>1</Position>
       <Comment>用户id</Comment>
       <DataType>bigint(32)|0s</DataType>
@@ -1268,35 +1273,35 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="282" name="user_code">
+    <column id="308" parent="282" name="user_code">
       <Position>2</Position>
       <Comment>用户账号</Comment>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="282" name="user_name">
+    <column id="309" parent="282" name="user_name">
       <Position>3</Position>
       <Comment>用户名称</Comment>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="282" name="user_password">
+    <column id="310" parent="282" name="user_password">
       <Position>4</Position>
       <Comment>用户密码</Comment>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="282" name="user_state">
+    <column id="311" parent="282" name="user_state">
       <Position>5</Position>
       <Comment>1:正常,0:暂停</Comment>
       <DataType>char(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="311" parent="282" name="PRIMARY">
+    <key id="312" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>

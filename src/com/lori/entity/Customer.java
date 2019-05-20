@@ -17,6 +17,8 @@ public class Customer {
     private String custName;
     private String custPhone;
     private String custMobile;
+    private String custImage;
+
 
     //客户和字典多对一的关系：需要在多的一方放一的对象
     private BaseDict baseDicrSource;
@@ -77,6 +79,14 @@ public class Customer {
 
     public void setBaseDictLevel(BaseDict baseDictLevel) {
         this.baseDictLevel = baseDictLevel;
+    }
+
+    public String getCustImage() {
+        return custImage;
+    }
+
+    public void setCustImage(String custImage) {
+        this.custImage = custImage;
     }
 
     @Override
