@@ -99,7 +99,7 @@
 													<TD>${customer.custPhone }</TD>
 													<TD>${customer.custMobile }</TD>
 													<TD>
-													<a href="${pageContext.request.contextPath }/customerServlet?method=edit&custId=${customer.custId}">修改</a>
+													<a href="${pageContext.request.contextPath }/edit?custId=${customer.custId}">修改</a>
 													&nbsp;&nbsp;
 													<a href="${pageContext.request.contextPath }/delete?custId=${customer.custId}">删除</a>
 													</TD>

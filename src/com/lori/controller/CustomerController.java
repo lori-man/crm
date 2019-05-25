@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -61,7 +62,7 @@ public class CustomerController {
         }
         System.out.println(customer);
         customerService.save(customer);
-        return "welcome";
+        return "redirect:findAll.do";
     }
 
     /**
@@ -82,7 +83,7 @@ public class CustomerController {
         DetachedCriteria detachedCriteria = DetachedCriteria.forClass(Customer.class);
 
        PageBean<Customer> pageBean=customerService.findByPage(detachedCriteria,currPage,pageSize);
-        System.out.println(pageBean);
+//        System.out.println(pageBean);
         req.setAttribute("pageBean",pageBean);
         return "/jsp/customer/list";
     }
@@ -102,6 +103,23 @@ public class CustomerController {
             }
         }
         customerService.delete(customer);
-        return "welcome";
+        return "redirect:findAll.do";
+    }
+
+    @RequestMapping("/edit")
+    public String edit(@RequestParam("custId") String custId, HttpServletRequest req) {
+        long id = Long.parseLong(custId);
+        Customer customer = customerService.findById(id);
+        System.out.println(customer);
+
+        System.out.println(customer.getBaseDicrIndustry().getDictId());
+        req.setAttribute("customer",customer);
+        return "jsp/customer/edit";
+    }
+
+    @RequestMapping("/customer_update")
+        public String customer_update(String custId, HttpServletRequest req) {
+
+        return "redirect:findAll.do";
     }
 }
