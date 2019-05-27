@@ -15,23 +15,16 @@
 	<script type="text/javascript">
 		<%
 			Customer cust=(Customer)request.getAttribute("customer");
-			System.out.println(cust.getBaseDicrIndustry().getDictId());
-			String filename=cust.getCustImage();
-			int index=filename.lastIndexOf("/");
-			filename=filename.substring(index+1);
-
 		%>
 
-       $(function () {
-            var cust_id = document.getElementById("cust_id");
-           cust_id.value=<%= cust.getCustId()%>
-            var cust_mobile = document.getElementById("cust_mobile");
-           cust_mobile.value=<%= cust.getCustMobile()%>
-            var phone = document.getElementById("cust_phone");
-           phone.value=<%= cust.getCustPhone()%>
-		   <%--var file = document.getElementById("file");--%>
-		   <%--file=<%= filename%>--%>
-        });
+       <%--$(function () {--%>
+            <%--&lt;%&ndash;var cust_id = document.getElementById("cust_name");&ndash;%&gt;--%>
+           <%--&lt;%&ndash;cust_id.value=<%= cust.getCustName()%>;&ndash;%&gt;--%>
+            <%--var cust_mobile = document.getElementById("cust_mobile");--%>
+           <%--cust_mobile.value=<%= cust.getCustMobile()%>;--%>
+            <%--var phone = document.getElementById("cust_phone");--%>
+           <%--phone.value=<%= cust.getCustPhone()%>;--%>
+        <%--});--%>
 
         $(function () {
             //页面加载函数就会执行
@@ -97,6 +90,7 @@
 	  method=post enctype="multipart/form-data">
 
 
+
 	<TABLE cellSpacing=0 cellPadding=0 width="98%" border=0>
 		<TBODY>
 		<TR>
@@ -125,11 +119,13 @@
 				</TABLE>
 
 				<TABLE cellSpacing=0 cellPadding=5  border=0>
+                    <INPUT  type="hidden" id="custId"
+                            value="${customer.custId}" name="custId">
 
 					<TR>
 						<td>客户名称：</td>
 						<td>
-							<INPUT class=textbox id=cust_id value="NULL"
+							<INPUT class=textbox id="cust_name" value="${customer.custName}"
 								   style="WIDTH: 180px" maxLength=50 name="custName">
 						</td>
 						<td>客户级别 ：</td>
@@ -159,15 +155,17 @@
 					<TR>
 						<td>固定电话 ：</td>
 						<td>
-							<INPUT class=textbox id=cust_mobile value="NULL"
+							<INPUT class=textbox id=cust_mobile value="${customer.custPhone}"
 								   style="WIDTH: 180px" maxLength=50 name="custPhone">
 						</td>
 						<td>移动电话 ：</td>
 						<td>
-							<INPUT class=textbox id=cust_phone value="NULL"
+							<INPUT class=textbox id=cust_phone value="${customer.custMobile}"
 								   style="WIDTH: 180px" maxLength=50 name="custMobile">
 						</td>
 					</TR>
+                    <INPUT  type="hidden" id="custImage"
+                            value="${customer.custImage}" name="custImage">
 					<tr>
 						<td rowspan=3>
 							<INPUT  type=file id="file"

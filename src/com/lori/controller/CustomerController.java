@@ -118,8 +118,8 @@ public class CustomerController {
     }
 
     @RequestMapping("/customer_update")
-        public String customer_update(String custId, HttpServletRequest req) {
-
+        public String customer_update(Customer customer,@RequestParam("upload") MultipartFile file) {
+        System.out.println(customer);
         return "redirect:findAll.do";
     }
 }

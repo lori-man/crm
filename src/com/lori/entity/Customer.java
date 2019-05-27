@@ -57,6 +57,14 @@ public class Customer {
         this.custMobile = custMobile;
     }
 
+    public String getCustImage() {
+        return custImage;
+    }
+
+    public void setCustImage(String custImage) {
+        this.custImage = custImage;
+    }
+
     public BaseDict getBaseDicrSource() {
         return baseDicrSource;
     }
@@ -81,14 +89,6 @@ public class Customer {
         this.baseDictLevel = baseDictLevel;
     }
 
-    public String getCustImage() {
-        return custImage;
-    }
-
-    public void setCustImage(String custImage) {
-        this.custImage = custImage;
-    }
-
     @Override
     public String toString() {
         return "Customer{" +
@@ -96,6 +96,7 @@ public class Customer {
                 ", custName='" + custName + '\'' +
                 ", custPhone='" + custPhone + '\'' +
                 ", custMobile='" + custMobile + '\'' +
+                ", custImage='" + custImage + '\'' +
                 '}';
     }
 }
