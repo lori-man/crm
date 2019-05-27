@@ -73,4 +73,8 @@ public class CustomerService {
     public void delete(Customer customer) {
         customerDao.delete(customer);
     }
+
+    public void update(Customer customer) {
+        customerDao.update(customer);
+    }
 }

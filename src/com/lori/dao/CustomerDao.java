@@ -54,4 +54,8 @@ public class CustomerDao extends HibernateDaoSupport {
     public void delete(Customer customer) {
         getHibernateTemplate().delete(customer);
     }
+
+    public void update(Customer customer) {
+        getHibernateTemplate().update(customer);
+    }
 }

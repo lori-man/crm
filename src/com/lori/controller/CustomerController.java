@@ -118,8 +118,30 @@ public class CustomerController {
     }
 
     @RequestMapping("/customer_update")
-        public String customer_update(Customer customer,@RequestParam("upload") MultipartFile file) {
-        System.out.println(customer);
+    public String customer_update(Customer customer, @RequestParam("upload") MultipartFile multipartFile) throws IOException {
+        System.out.println(multipartFile.getSize());
+        if (multipartFile.getSize()>0) {
+//            System.out.println(multipartFile.toString());
+            String path = "F:/crm";
+
+            //一个目录下存放相同文件名，随机文件名
+            String uuidFileNmae = UpLoadUtils.getUuidFileName(multipartFile.getOriginalFilename());
+
+            String realPath = UpLoadUtils.getPath(uuidFileNmae);
+
+            String url = path + realPath;
+            File file = new File(url);
+            if (!file.exists()) {
+                file.mkdirs();
+            }
+            File dictFile = new File(url + uuidFileNmae);
+            dictFile.createNewFile();
+            multipartFile.transferTo(dictFile);
+            System.out.println(dictFile.toString());
+            customer.setCustImage(url + uuidFileNmae);
+        }
+
+        customerService.update(customer);
         return "redirect:findAll.do";
     }
 }
