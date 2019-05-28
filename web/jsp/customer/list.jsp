@@ -9,15 +9,65 @@
 <LINK href="${pageContext.request.contextPath }/css/Style.css" type=text/css rel=stylesheet>
 <LINK href="${pageContext.request.contextPath }/css/Manage.css" type=text/css
 	rel=stylesheet>
-<script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
 <SCRIPT language=javascript>
 	function to_page(page){
 		if(page){
 			$("#page").val(page);
 		}
 		document.customerForm.submit();
-		
 	}
+    $(function () {
+        //页面加载函数就会执行
+        //页面加载，异步查询字典数据
+        //加载客户资源
+        $.post("/findbytypecode",{"dict_type_code":"002"},function(data){
+            var str="";
+            for (var i=0;i<data.length;i++){
+                if (data[i].dictId=="${customer.baseDicrSource.dictId}")
+                {
+                    str += "<option value='" + data[i].dictId + "' selected=true>" + data[i].dictItemName + "</option>";
+                }else {
+                    str += "<option value='" + data[i].dictId + "'>" + data[i].dictItemName + "</option>";
+                }
+            }
+            $("#cust_source").append(str);
+            //下次改页面  补充重启项目  现在是热部署  如果改的多的话  重启一下
+            //还有 后台list传到前台  for循环  点的是集合中对象entity的属性  不是你接收参数的属性
+        },"json")
+    })
+
+    $(function () {
+        //加载客户等级
+        $.post("/findbytypecode",{"dict_type_code":"006"},function(data){
+            var str="";
+            for (var i=0;i<data.length;i++){
+                if (data[i].dictId=="${customer.baseDictLevel.dictId}")
+                {
+                    str += "<option value='" + data[i].dictId + "' selected=true>" + data[i].dictItemName + "</option>";
+                }else {
+                    str += "<option value='" + data[i].dictId + "'>" + data[i].dictItemName + "</option>";
+                }
+            }
+            $("#cust_level").append(str);
+        },"json")
+    })
+
+    $(function () {
+        //加载客户行业
+        $.post("/findbytypecode",{"dict_type_code":"001"},function(data){
+            var str="";
+            for (var i=0;i<data.length;i++){
+                if (data[i].dictId=="${customer.baseDicrIndustry.dictId}")
+                {
+                    str += "<option value='" + data[i].dictId + "' selected=true>" + data[i].dictItemName + "</option>";
+                }else {
+                    str += "<option value='" + data[i].dictId + "'>" + data[i].dictItemName + "</option>";
+                }
+            }
+            $("#cust_industry").append(str);
+        },"json")
+    })
 </SCRIPT>
 
 <META content="MSHTML 6.00.2900.3492" name=GENERATOR>
@@ -62,8 +112,23 @@
 											<TBODY>
 												<TR>
 													<TD>客户名称：</TD>
-													<TD><INPUT class=textbox id=sChannel2
+													<TD><INPUT class=textbox id="custName"
 														style="WIDTH: 80px" maxLength=50 name="custName"></TD>
+
+													<TD>信息来源：</TD>
+													<TD><select id="cust_source" name="baseDicrSource.dictId">
+														<option value="">-请选择-</option>
+													</select></TD>
+
+													<TD>所属行业：</TD>
+													<TD><select id="cust_industry" name="baseDicrIndustry.dictId">
+														<option value="">-请选择-</option>
+													</select></TD>
+
+													<TD>客户级别：</TD>
+													<TD><select id="cust_level" name="baseDictLevel.dictId">
+														<option value="">-请选择-</option>
+													</select></TD>
 													
 													<TD><INPUT class=button id=sButton2 type=submit
 														value=" 筛选 " name=sButton2></TD>

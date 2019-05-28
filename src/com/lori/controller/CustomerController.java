@@ -5,6 +5,7 @@ import com.lori.entity.PageBean;
 import com.lori.service.CustomerService;
 import com.lori.utils.UpLoadUtils;
 import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,8 +40,8 @@ public class CustomerController {
     @RequestMapping("/customer_save")
     public String save(Customer customer,@RequestParam("upload")MultipartFile multipartFile) throws IOException {
 
-        if (multipartFile != null) {
-//            System.out.println(multipartFile.toString());
+        if (multipartFile != null && multipartFile.getSize() > 0) {
+//            System.out.println(multipartFile.getSize());
             String path = "F:/crm";
 
             //一个目录下存放相同文件名，随机文件名
@@ -67,11 +68,12 @@ public class CustomerController {
 
     /**
      * 分页查询客户
+     *
      * @param currPage
      * @return
      */
     @RequestMapping("/findAll")
-    public String findAll( Integer currPage,Integer pageSize, HttpServletRequest req) {
+    public String findAll(Integer currPage, Integer pageSize, HttpServletRequest req, Customer customer) {
         if (currPage == null) {
             currPage = 1;
         }
@@ -82,9 +84,32 @@ public class CustomerController {
         //最好使用离线查询
         DetachedCriteria detachedCriteria = DetachedCriteria.forClass(Customer.class);
 
-       PageBean<Customer> pageBean=customerService.findByPage(detachedCriteria,currPage,pageSize);
+        if (customer.getCustName() != null) {
+            System.out.println(customer.toString());
+            detachedCriteria.add(Restrictions.like("custName", "%" + customer.getCustName() + "%"));
+        }
+        if (customer.getBaseDicrIndustry() != null) {
+            System.out.println(customer.getBaseDicrIndustry().getDictId());
+            if (customer.getBaseDicrIndustry().getDictId() != null && !"".equals(customer.getBaseDicrIndustry().getDictId())) {
+                detachedCriteria.add(Restrictions.eq("baseDicrIndustry.dictId", customer.getBaseDicrIndustry().getDictId()));
+            }
+        }
+        if (customer.getBaseDictLevel() != null) {
+            System.out.println(customer.getBaseDictLevel().getDictId());
+            if (customer.getBaseDictLevel().getDictId() != null && !"".equals(customer.getBaseDictLevel().getDictId())) {
+                detachedCriteria.add(Restrictions.eq("baseDictLevel.dictId", customer.getBaseDictLevel().getDictId()));
+            }
+        }
+        if (customer.getBaseDicrSource()!= null) {
+            if (customer.getBaseDicrSource().getDictId() != null && !"".equals(customer.getBaseDicrSource().getDictId())) {
+                detachedCriteria.add(Restrictions.eq("baseDicrSource.dictId", customer.getBaseDicrSource().getDictId()));
+            }
+        }
+
+        PageBean<Customer> pageBean = customerService.findByPage(detachedCriteria, currPage, pageSize);
 //        System.out.println(pageBean);
-        req.setAttribute("pageBean",pageBean);
+        req.setAttribute("pageBean", pageBean);
+        req.setAttribute("customer", customer);
         return "/jsp/customer/list";
     }
 
