@@ -1,5 +1,8 @@
 package com.lori.entity;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  CREATE TABLE `cst_customer` (
  `cust_id` bigint(32) NOT NULL AUTO_INCREMENT COMMENT '客户编号(主键)',
@@ -24,6 +27,16 @@ public class Customer {
     private BaseDict baseDicrSource;
     private BaseDict baseDicrIndustry;
     private BaseDict baseDictLevel;
+
+    private Set<LinkMan> linkmen = new HashSet<>();
+
+    public Set<LinkMan> getLinkmen() {
+        return linkmen;
+    }
+
+    public void setLinkmen(Set<LinkMan> linkmen) {
+        this.linkmen = linkmen;
+    }
 
     public Long getCustId() {
         return custId;

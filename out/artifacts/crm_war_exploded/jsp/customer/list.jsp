@@ -68,6 +68,10 @@
             $("#cust_industry").append(str);
         },"json")
     })
+
+    $(function () {
+        $("#pageSize").find("option[value='"+"${pageBean.pageSize}"+"']").attr("selected",true);
+    });
 </SCRIPT>
 
 <META content="MSHTML 6.00.2900.3492" name=GENERATOR>
@@ -183,15 +187,14 @@
 												style="LINE-HEIGHT: 20px; HEIGHT: 20px; TEXT-ALIGN: right">
 												共[<B>${pageBean.totalCount}</B>]条记录,[<B>${pageBean.totalPage}</B>]页
 												,每页显示
-												<select name="pageSize" onchange="to_page()">
-													<option value="3" <c:if test="${pageSize==3}">selected</c:if>>3</option>
-													<option value="5" <c:if test="${pageSize==5}">selected</c:if>>5</option>
-													<option value="10" <c:if test="${pageSize==10}">selected</c:if>>10</option>
+												<select id="pageSize" name="pageSize" onchange="to_page()">
+													<option value="3" >3</option>
+													<option value="5" >5</option>
+													<option value="10" >10</option>
 												</select>
 												条
 												<A href="/findAll?currPage=${pageBean.currPage-1}&pageSize=${pageBean.pageSize}" <c:if test="${pageBean.currPage<=1}"> onclick="javascript:return false;" </c:if> >前一页</A>
-												<B>
-												</B>
+												<B>${pageBean.currPage}</B>
 												<A href="/findAll?currPage=${pageBean.currPage+1}&pageSize=${pageBean.pageSize}" <c:if test="${pageBean.currPage>=pageBean.totalPage}"> onclick="javascript:return false;" </c:if> >后一页</A>
 												到
 												<input type="text" size="3" id="page" name="currPage" />

@@ -1,6 +1,7 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,7 +10,7 @@
 <LINK href="${pageContext.request.contextPath }/css/Style.css" type=text/css rel=stylesheet>
 <LINK href="${pageContext.request.contextPath }/css/Manage.css" type=text/css
 	rel=stylesheet>
-<script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <SCRIPT language=javascript>
 	function to_page(page){
 		if(page){
@@ -18,13 +19,28 @@
 		document.customerForm.submit();
 		
 	}
+
+	$(function () {
+        <%--alert("${pagebean.pageSize}");--%>
+        <%--var three = document.getElementById("three");--%>
+        <%--var five = document.getElementById("five");--%>
+        <%--var ten = document.getElementById("ten");--%>
+        <%--if (3=="${pagebean.pageSize}") {--%>
+            <%--three.selected = true;--%>
+        <%--}else if (5 =="${pagebean.pageSize}") {--%>
+            <%--five.select = true;--%>
+        <%--}else if (10 =="${pagebean.pageSize}") {--%>
+            <%--ten.select = true;--%>
+        <%--}--%>
+        $("#pageSize").find("option[value='"+"${pagebean.pageSize}"+"']").attr("selected",true);
+    })
 </SCRIPT>
 
 <META content="MSHTML 6.00.2900.3492" name=GENERATOR>
 </HEAD>
 <BODY>
 	<FORM id="customerForm" name="customerForm"
-		action="${pageContext.request.contextPath }/linkmanServlet?method=list"
+		action="/linkmanfindAll"
 		method=post>
 		
 		<TABLE cellSpacing=0 cellPadding=0 width="98%" border=0>
@@ -85,20 +101,28 @@
 													<TD>性别</TD>
 													<TD>办公电话</TD>
 													<TD>手机</TD>
+													<TD>邮箱</TD>
+													<TD>QQ</TD>
+													<TD>职位</TD>
+													<TD>所属客户</TD>
 													<TD>操作</TD>
 												</TR>
-												<c:forEach items="${list }" var="linkman">
+												<c:forEach items="${pagebean.list }" var="linkman">
 												<TR
 													style="FONT-WEIGHT: normal; FONT-STYLE: normal; BACKGROUND-COLOR: white; TEXT-DECORATION: none">
-													<TD>${linkman.lkmName }</TD>
-													<TD>${linkman.lkmGender }</TD>
-													<TD>${linkman.lkmPhone }</TD>
-													<TD>${linkman.lkmMobile }</TD>
-													
+													<TD>${linkman.lkm_name }</TD>
+													<TD>${linkman.lkm_gender }</TD>
+													<TD>${linkman.lkm_phone }</TD>
+													<TD>${linkman.lkm_mobile }</TD>
+													<TD>${linkman.lkm_email }</TD>
+													<TD>${linkman.lkm_qq }</TD>
+													<TD>${linkman.lkm_position }</TD>
+													<TD>${linkman.customer.custName }</TD>
+
 													<TD>
-													<a href="${pageContext.request.contextPath }/linkmanServlet?method=edit&lkmId=${linkman.lkmId}">修改</a>
+													<a href="/linkmanServlet?method=edit&lkmId=${linkman.lkm_id}">修改</a>
 													&nbsp;&nbsp;
-													<a href="${pageContext.request.contextPath }/linkmanServlet?method=delete&lkmId=${linkman.lkmId}">删除</a>
+													<a href="${pageContext.request.contextPath }/linkmanServlet?method=delete&lkmId=${linkman.lkm_id}">删除</a>
 													</TD>
 												</TR>
 												
@@ -113,19 +137,19 @@
 									<TD><SPAN id=pagelink>
 											<DIV
 												style="LINE-HEIGHT: 20px; HEIGHT: 20px; TEXT-ALIGN: right">
-												共[<B>${total}</B>]条记录,[<B>${totalPage}</B>]页
+												共[<B>${pagebean.totalCount}</B>]条记录,[<B>${pagebean.totalPage}</B>]页
 												,每页显示
-												<select name="pageSize">
-												
-												<option value="1" <c:if test="${pageSize==1 }">selected</c:if>>1</option>
-												<option value="30" <c:if test="${pageSize==30 }">selected</c:if>>30</option>
+												<select id="pageSize" name="pageSize" onchange="to_page()">
+													<option id="three" value="3" >3</option>
+													<option id="five" value="5" >5</option>
+													<option id="ten" value="10">10</option>
 												</select>
 												条
-												[<A href="javascript:to_page(${page-1})">前一页</A>]
-												<B>${page}</B>
-												[<A href="javascript:to_page(${page+1})">后一页</A>] 
+												[<A href="/linkmanfindAll?currPage=${pagebean.currPage-1}&pageSize=${pagebean.pageSize}" <c:if test="${pagebean.currPage<=1}"> onclick="javascript:return false;" </c:if>>前一页</A>]
+												<B>${pagebean.currPage}</B>
+												[<A href="/linkmanfindAll?currPage=${pagebean.currPage+1}&pageSize=${pagebean.pageSize}" <c:if test="${pagebean.currPage>=pagebean.totalPage}"> onclick="javascript:return false;" </c:if>>后一页</A>]
 												到
-												<input type="text" size="3" id="page" name="page" />
+												<input type="text" size="3" id="page" name="currPage" />
 												页
 												
 												<input type="button" value="Go" onclick="to_page()"/>

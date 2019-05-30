@@ -42,5 +42,10 @@
         <many-to-one name="baseDicrSource" class="com.lori.entity.BaseDict" column="cust_source"></many-to-one>
         <many-to-one name="baseDicrIndustry" column="cust_industry" class="com.lori.entity.BaseDict"></many-to-one>
         <many-to-one name="baseDictLevel" column="cust_level" class="com.lori.entity.BaseDict"></many-to-one>
+
+        <set name="linkmen">
+            <key column="lkm_cust_id"></key>
+            <one-to-many class="com.lori.entity.LinkMan"></one-to-many>
+        </set>
     </class>
 </hibernate-mapping>

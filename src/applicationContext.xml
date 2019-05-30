@@ -53,6 +53,7 @@
                 <value>com/lori/entity/user.hbm.xml</value>
                 <value>com/lori/entity/basedict.hbm.xml</value>
                 <value>com/lori/entity/customer.hbm.xml</value>
+                <value>com/lori/entity/linkman.hbm.xml</value>
             </list>
         </property>
     </bean>
@@ -69,6 +70,10 @@
 
     <!--为baseDictDao赋值sessionFactory-->
     <bean id="baseDictDao" class="com.lori.dao.BaseDictDao">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <!--为LinkmanDao赋值sessionFactory-->
+    <bean id="linkMaDao" class="com.lori.dao.LinkManDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
