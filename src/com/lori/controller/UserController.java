@@ -31,7 +31,7 @@ public class UserController {
         }else {
             //登入成功
             req.getSession().setAttribute("existUser", existUser);
-            System.out.println(existUser.toString());
+//            System.out.println(existUser.toString());
             return "redirect:/index.jsp";
         }
     }

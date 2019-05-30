@@ -27,7 +27,7 @@ public class LinkManController {
         PageBean<LinkMan> pageBean = linkManService.findAll(detachedCriteria, pageSize, currPage);
 
         req.setAttribute("pagebean", pageBean);
-        System.out.println(pageBean);
+//        System.out.println(pageBean);
         return "jsp/linkman/list";
     }
 }

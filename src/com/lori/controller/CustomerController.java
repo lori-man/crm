@@ -61,7 +61,7 @@ public class CustomerController {
             customer.setCustImage(url + uuidFileNmae);
 
         }
-        System.out.println(customer);
+//        System.out.println(customer);
         customerService.save(customer);
         return "redirect:findAll.do";
     }
@@ -115,9 +115,9 @@ public class CustomerController {
 
     @RequestMapping("/delete")
     public String deleteById(String custId) {
-        System.out.println(custId);
+//        System.out.println(custId);
         long id = Long.parseLong(custId);
-        System.out.println(id);
+//        System.out.println(id);
         Customer customer = customerService.findById(id);
         System.out.println(customer);
 
@@ -135,9 +135,9 @@ public class CustomerController {
     public String edit(@RequestParam("custId") String custId, HttpServletRequest req) {
         long id = Long.parseLong(custId);
         Customer customer = customerService.findById(id);
-        System.out.println(customer);
+//        System.out.println(customer);
 
-        System.out.println(customer.getBaseDicrIndustry().getDictId());
+//        System.out.println(customer.getBaseDicrIndustry().getDictId());
         req.setAttribute("customer",customer);
         return "jsp/customer/edit";
     }
@@ -162,7 +162,7 @@ public class CustomerController {
             File dictFile = new File(url + uuidFileNmae);
             dictFile.createNewFile();
             multipartFile.transferTo(dictFile);
-            System.out.println(dictFile.toString());
+//            System.out.println(dictFile.toString());
             customer.setCustImage(url + uuidFileNmae);
         }
 
