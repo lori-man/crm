@@ -58,4 +58,8 @@ public class CustomerDao extends HibernateDaoSupport {
     public void update(Customer customer) {
         getHibernateTemplate().update(customer);
     }
+
+    public List<Customer> findAll() {
+        return (List<Customer>) getHibernateTemplate().find("from Customer");
+    }
 }

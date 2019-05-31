@@ -111,7 +111,14 @@
 												<TR
 													style="FONT-WEIGHT: normal; FONT-STYLE: normal; BACKGROUND-COLOR: white; TEXT-DECORATION: none">
 													<TD>${linkman.lkm_name }</TD>
-													<TD>${linkman.lkm_gender }</TD>
+													<TD>
+														<c:if test="${linkman.lkm_gender=='1'}">
+															男
+														</c:if>
+														<c:if test="${linkman.lkm_gender=='2'}">
+															女
+														</c:if>
+													</TD>
 													<TD>${linkman.lkm_phone }</TD>
 													<TD>${linkman.lkm_mobile }</TD>
 													<TD>${linkman.lkm_email }</TD>

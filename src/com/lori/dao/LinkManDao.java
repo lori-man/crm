@@ -22,4 +22,8 @@ public class LinkManDao extends HibernateDaoSupport {
         }
         return null;
     }
+
+    public void save(LinkMan linkMan) {
+        getHibernateTemplate().save(linkMan);
+    }
 }

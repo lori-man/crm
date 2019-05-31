@@ -77,4 +77,8 @@ public class CustomerService {
     public void update(Customer customer) {
         customerDao.update(customer);
     }
+
+    public List<Customer> findAll() {
+        return customerDao.findAll();
+    }
 }

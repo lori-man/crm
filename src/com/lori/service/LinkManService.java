@@ -35,4 +35,8 @@ public class LinkManService {
 
         return pageBean;
     }
+
+    public void save(LinkMan linkMan) {
+        linkManDao.save(linkMan);
+    }
 }

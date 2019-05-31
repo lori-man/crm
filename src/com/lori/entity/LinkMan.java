@@ -105,7 +105,6 @@ public class LinkMan {
                 ", lkm_qq='" + lkm_qq + '\'' +
                 ", lkm_position='" + lkm_position + '\'' +
                 ", lkm_memo='" + lkm_memo + '\'' +
-                ", customer=" + customer.getCustName() +
                 '}';
     }
 }
