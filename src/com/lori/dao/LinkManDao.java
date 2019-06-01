@@ -34,4 +34,8 @@ public class LinkManDao extends HibernateDaoSupport {
     public void update(LinkMan linkMan) {
         getHibernateTemplate().update(linkMan);
     }
+
+    public void delete(LinkMan linkMan) {
+        getHibernateTemplate().delete(linkMan);
+    }
 }

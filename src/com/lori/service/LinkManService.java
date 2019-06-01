@@ -40,11 +40,15 @@ public class LinkManService {
         linkManDao.save(linkMan);
     }
 
-    public LinkMan fingById(Long lkm_id) {
+    public LinkMan findById(Long lkm_id) {
         return linkManDao.findById(lkm_id);
     }
 
     public void update(LinkMan linkMan) {
         linkManDao.update(linkMan);
+    }
+
+    public void delete(LinkMan linkMan) {
+        linkManDao.delete(linkMan);
     }
 }

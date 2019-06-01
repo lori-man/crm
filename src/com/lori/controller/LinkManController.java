@@ -59,7 +59,7 @@ public class LinkManController {
     @RequestMapping("/linkmanedit")
     public String edit(Long lkm_id,HttpServletRequest req) {
         List<Customer> list = customerService.findAll();
-        LinkMan linkMan = linkManService.fingById(lkm_id);
+        LinkMan linkMan = linkManService.findById(lkm_id);
 
         req.setAttribute("linkman", linkMan);
         req.setAttribute("list", list);
@@ -72,6 +72,14 @@ public class LinkManController {
         linkMan.setCustomer(customer);
 
         linkManService.update(linkMan);
+        return "redirect:linkmanfindAll.do";
+    }
+
+    @RequestMapping("/linkmandelete")
+    public String delete(long lkm_id) {
+        System.out.println(lkm_id);
+        LinkMan linkMan = linkManService.findById(lkm_id);
+        linkManService.delete(linkMan);
         return "redirect:linkmanfindAll.do";
     }
 }
