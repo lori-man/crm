@@ -26,4 +26,12 @@ public class LinkManDao extends HibernateDaoSupport {
     public void save(LinkMan linkMan) {
         getHibernateTemplate().save(linkMan);
     }
+
+    public LinkMan findById(Long lkm_id) {
+        return getHibernateTemplate().get(LinkMan.class, lkm_id);
+    }
+
+    public void update(LinkMan linkMan) {
+        getHibernateTemplate().update(linkMan);
+    }
 }

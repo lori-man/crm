@@ -47,12 +47,31 @@ public class LinkManController {
 
     @RequestMapping("/linkmanSave")
     public String saveLinkMan(LinkMan linkMan, @RequestParam("custId") long custId) {
-        System.out.println(linkMan);
+        System.out.println(linkMan.getLkm_id());
+
         Customer customer = customerService.findById(custId);
         linkMan.setCustomer(customer);
 
-
         linkManService.save(linkMan);
-        return "jsp/linkman/list";
+        return "redirect:linkmanfindAll.do";
+    }
+
+    @RequestMapping("/linkmanedit")
+    public String edit(Long lkm_id,HttpServletRequest req) {
+        List<Customer> list = customerService.findAll();
+        LinkMan linkMan = linkManService.fingById(lkm_id);
+
+        req.setAttribute("linkman", linkMan);
+        req.setAttribute("list", list);
+        return "jsp/linkman/edit";
+    }
+
+    @RequestMapping("/linkmanUpdate")
+    public String update(LinkMan linkMan, @RequestParam("custId") long custId) {
+        Customer customer = customerService.findById(custId);
+        linkMan.setCustomer(customer);
+
+        linkManService.update(linkMan);
+        return "redirect:linkmanfindAll.do";
     }
 }

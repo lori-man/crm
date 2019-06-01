@@ -127,7 +127,7 @@
 													<TD>${linkman.customer.custName }</TD>
 
 													<TD>
-													<a href="/linkmanServlet?method=edit&lkmId=${linkman.lkm_id}">修改</a>
+													<a href="/linkmanedit?lkm_id=${linkman.lkm_id}">修改</a>
 													&nbsp;&nbsp;
 													<a href="${pageContext.request.contextPath }/linkmanServlet?method=delete&lkmId=${linkman.lkm_id}">删除</a>
 													</TD>

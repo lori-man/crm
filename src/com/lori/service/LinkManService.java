@@ -39,4 +39,12 @@ public class LinkManService {
     public void save(LinkMan linkMan) {
         linkManDao.save(linkMan);
     }
+
+    public LinkMan fingById(Long lkm_id) {
+        return linkManDao.findById(lkm_id);
+    }
+
+    public void update(LinkMan linkMan) {
+        linkManDao.update(linkMan);
+    }
 }
