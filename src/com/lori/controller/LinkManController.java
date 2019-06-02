@@ -6,6 +6,7 @@ import com.lori.entity.PageBean;
 import com.lori.service.CustomerService;
 import com.lori.service.LinkManService;
 import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +24,10 @@ public class LinkManController {
     private CustomerService customerService;
 
     @RequestMapping("/linkmanfindAll")
-    public String findAll(Integer currPage, Integer pageSize, HttpServletRequest req) {
+    public String findAll(Integer currPage, Integer pageSize, HttpServletRequest req, LinkMan linkMan) {
+        List<Customer> list = customerService.findAll();
+        req.setAttribute("list", list);
+
         if (currPage == null) {
             currPage = 1;
         }
@@ -31,9 +35,28 @@ public class LinkManController {
             pageSize = 3;
         }
         DetachedCriteria detachedCriteria = DetachedCriteria.forClass(LinkMan.class);
+
+
+        if (linkMan.getLkm_name() != null&&!"".equals(linkMan.getLkm_name())) {
+            System.out.println(linkMan.getLkm_name());
+            detachedCriteria.add(Restrictions.like("lkm_name", "%" + linkMan.getLkm_name() + "%"));
+        }
+        if (linkMan.getLkm_gender() != null&&!"".equals(linkMan.getLkm_gender())) {
+            System.out.println(linkMan.getLkm_gender());
+            detachedCriteria.add(Restrictions.eq("lkm_gender", linkMan.getLkm_gender()));
+        }
+        if (linkMan.getCustomer() != null) {
+            System.out.println(linkMan.getCustomer().getCustId());
+            if (linkMan.getCustomer().getCustId() != null && !"".equals(linkMan.getCustomer().getCustId())) {
+                detachedCriteria.add(Restrictions.eq("customer.custId", linkMan.getCustomer().getCustId()));
+            }
+        }
+
         PageBean<LinkMan> pageBean = linkManService.findAll(detachedCriteria, pageSize, currPage);
 
         req.setAttribute("pagebean", pageBean);
+        req.setAttribute("linkMan", linkMan);
+//        System.out.println(linkMan);
 //        System.out.println(pageBean);
         return "jsp/linkman/list";
     }

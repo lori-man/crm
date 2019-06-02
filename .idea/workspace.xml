@@ -8,9 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3c507fb4-fd49-4fcf-a79f-05426a046505" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/customer.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/customer.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/jsp/linkman/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/jsp/linkman/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/customer.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/entity/customer.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lori/controller/LinkManController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/controller/LinkManController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/service/LinkManService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/service/LinkManService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/linkman/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/linkman/list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,20 +61,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/linkman/list.jsp">
+      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lori/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="131" column="88" lean-forward="true" selection-start-line="131" selection-start-column="88" selection-end-line="131" selection-end-column="88" />
+            <state relative-caret-position="315">
+              <caret line="108" column="59" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkManController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+              <folding>
+                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="e#1828#1829#0" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+                <element signature="e#1917#1918#0" expanded="true" />
+                <element signature="e#1956#1957#0" expanded="true" />
+                <element signature="e#2000#2001#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="46" column="103" selection-start-line="46" selection-start-column="103" selection-end-line="46" selection-end-column="103" />
+              <folding>
+                <element signature="e#1350#1351#0" expanded="true" />
+                <element signature="e#1419#1420#0" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkManController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lori/controller/LinkManController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+            <state relative-caret-position="91">
+              <caret line="39" column="79" lean-forward="true" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +117,8 @@
       <file leaf-file-name="LinkManService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lori/service/LinkManService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+            <state relative-caret-position="231">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
               <folding>
                 <element signature="e#1253#1254#0" expanded="true" />
                 <element signature="e#1293#1294#0" expanded="true" />
@@ -93,32 +127,43 @@
                 <element signature="e#1430#1431#0" expanded="true" />
                 <element signature="e#1472#1473#0" expanded="true" />
                 <element signature="e#1515#1516#0" expanded="true" />
-                <element signature="e#1540#1541#0" expanded="true" />
+                <element signature="e#1557#1558#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkManDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinkManDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+            <state relative-caret-position="216">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="e#940#941#0" expanded="true" />
                 <element signature="e#992#993#0" expanded="true" />
                 <element signature="e#1151#1152#0" expanded="true" />
                 <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
+                <element signature="e#1302#1303#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lori/controller/CustomerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1169">
-              <caret line="169" column="37" lean-forward="true" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
+      <file leaf-file-name="cst_linkman" pinned="false" current-in-tab="false">
+        <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_linkman">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cst_customer" pinned="false" current-in-tab="false">
+        <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -147,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/user.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/SysUser.java" />
@@ -173,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/com/lori/entity/Demo.java" />
         <option value="$PROJECT_DIR$/web/jsp/customer/add.jsp" />
         <option value="$PROJECT_DIR$/src/com/lori/utils/UpLoadUtils.java" />
-        <option value="2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer.sql" />
         <option value="$PROJECT_DIR$/web/jsp/customer/demo.jsp" />
         <option value="$PROJECT_DIR$/src/springMvc.xml" />
         <option value="$PROJECT_DIR$/web/jsp/customer/edit.jsp" />
@@ -182,7 +225,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f825847-36c1-48cb-83e0-29f332f58814/console.sql" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/linkman.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/Customer.java" />
-        <option value="$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml" />
         <option value="$PROJECT_DIR$/src/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/PageBean.java" />
         <option value="$PROJECT_DIR$/web/jsp/customer/list.jsp" />
@@ -192,12 +234,15 @@
         <option value="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" />
         <option value="$PROJECT_DIR$/web/jsp/linkman/add.jsp" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/LinkMan.java" />
-        <option value="$PROJECT_DIR$/src/com/lori/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/web/jsp/linkman/edit.jsp" />
-        <option value="$PROJECT_DIR$/web/jsp/linkman/list.jsp" />
-        <option value="$PROJECT_DIR$/src/com/lori/controller/LinkManController.java" />
         <option value="$PROJECT_DIR$/src/com/lori/service/LinkManService.java" />
         <option value="$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml" />
+        <option value="$PROJECT_DIR$/web/jsp/linkman/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lori/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/web/jsp/linkman/list.jsp" />
+        <option value="2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer.sql" />
+        <option value="2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_linkman.sql" />
+        <option value="$PROJECT_DIR$/src/com/lori/controller/LinkManController.java" />
       </list>
     </option>
   </component>
@@ -242,9 +287,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="35" />
-    <option name="width" value="1105" />
-    <option name="height" value="970" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -362,7 +407,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -579,7 +624,7 @@
       <workItem from="1559097794716" duration="5765000" />
       <workItem from="1559171333170" duration="1133000" />
       <workItem from="1559172849663" duration="3512000" />
-      <workItem from="1559199801040" duration="21377000" />
+      <workItem from="1559199801040" duration="29030000" />
     </task>
     <task id="LOCAL-00001" summary="fourth commit">
       <created>1558147104707</created>
@@ -693,11 +738,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559392438547</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="linkman delete">
+      <created>1559433229436</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1559433229436</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185030000" />
+    <option name="totallyTimeSpent" value="192683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -725,21 +777,21 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" visible="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32796487" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.329429" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49865952" weight="0.3133236" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.3806735" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49865952" weight="0.91068816" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.50951684" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329429" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329429" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.20509383" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32796487" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" weight="0.1816354" />
       <window_info anchor="bottom" id="Problems" order="15" weight="0.329429" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
       <window_info id="Favorites" order="4" sideWeight="0.50213677" side_tool="true" weight="0.23592493" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32796487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -748,7 +800,7 @@
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.329429" />
       <window_info id="Designer" order="5" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.3806735" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.50951684" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329429" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32796487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -761,15 +813,15 @@
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32796487" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.20509383" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.1816354" />
       <window_info anchor="bottom" id="Problems" order="15" weight="0.329429" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49865952" weight="0.3133236" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49865952" weight="0.91068816" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.3297587" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="4" weight="0.20710456" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.20710456" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -833,7 +885,8 @@
     <MESSAGE value="linkman list" />
     <MESSAGE value="linkman add" />
     <MESSAGE value="linkman edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="linkman edit" />
+    <MESSAGE value="linkman delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="linkman delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -845,13 +898,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-5.1.1.RELEASE.jar!/org/springframework/web/multipart/commons/CommonsMultipartFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/org.springframework.web.multipart.MultipartFile">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -937,13 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1062,13 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lori/entity/PageBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1094,26 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="81" column="15" selection-start-line="81" selection-start-column="15" selection-end-line="81" selection-end-column="15" />
-          <folding>
-            <element signature="e#1873#1874#0" expanded="true" />
-            <element signature="e#1917#1918#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#1982#1983#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,38 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/controller/BaseDictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="55" column="19" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/entity/LinkMan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/entity/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" selection-start-line="19" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/customer/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1184,10 +1164,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="927">
+          <caret line="45" column="60" lean-forward="true" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/controller/BaseDictController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/entity/LinkMan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/customer/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="72" column="96" lean-forward="true" selection-start-line="72" selection-start-column="96" selection-end-line="72" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/linkman/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        <state relative-caret-position="425">
+          <caret line="92" column="95" lean-forward="true" selection-start-line="92" selection-start-column="95" selection-end-line="92" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/linkman/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="108" column="59" selection-start-line="108" selection-start-column="59" selection-end-line="108" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+          <folding>
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#2000#2001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="46" column="103" selection-start-line="46" selection-start-column="103" selection-end-line="46" selection-end-column="103" />
+          <folding>
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1302#1303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,41 +1277,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/customer/list.jsp">
+    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="170" column="111" lean-forward="true" selection-start-line="170" selection-start-column="111" selection-end-line="170" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/linkman/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="131" column="88" lean-forward="true" selection-start-line="131" selection-start-column="88" selection-end-line="131" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/controller/LinkManController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1169">
-          <caret line="169" column="37" lean-forward="true" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
+        <state>
+          <caret selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lori/service/LinkManService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        <state relative-caret-position="231">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
           <folding>
             <element signature="e#1253#1254#0" expanded="true" />
             <element signature="e#1293#1294#0" expanded="true" />
@@ -1241,20 +1296,24 @@
             <element signature="e#1430#1431#0" expanded="true" />
             <element signature="e#1472#1473#0" expanded="true" />
             <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java">
+    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_linkman.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state>
+          <caret column="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/controller/LinkManController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="39" column="79" lean-forward="true" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
           <folding>
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

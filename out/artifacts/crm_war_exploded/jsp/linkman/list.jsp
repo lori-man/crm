@@ -1,7 +1,7 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -20,20 +20,20 @@
 		
 	}
 
+    $(function () {
+        <c:forEach items="${list}" var="customer">
+        $("#customer_option").append("<option value='"+"${customer.custId}"+"'>"+"${customer.custName}"+"</option>");
+        </c:forEach>
+        $("#customer_option").find("option[value='${linkMan.customer.custId}']").attr("selected", true);
+        $("#lkm_gender").find("option[value='${linkMan.lkm_gender}']").attr("selected", true);
+        $("#lkm_name").attr("value", "${linkMan.lkm_name}");
+
+    })
+
 	$(function () {
-        <%--alert("${pagebean.pageSize}");--%>
-        <%--var three = document.getElementById("three");--%>
-        <%--var five = document.getElementById("five");--%>
-        <%--var ten = document.getElementById("ten");--%>
-        <%--if (3=="${pagebean.pageSize}") {--%>
-            <%--three.selected = true;--%>
-        <%--}else if (5 =="${pagebean.pageSize}") {--%>
-            <%--five.select = true;--%>
-        <%--}else if (10 =="${pagebean.pageSize}") {--%>
-            <%--ten.select = true;--%>
-        <%--}--%>
         $("#pageSize").find("option[value='"+"${pagebean.pageSize}"+"']").attr("selected",true);
     })
+
 </SCRIPT>
 
 <META content="MSHTML 6.00.2900.3492" name=GENERATOR>
@@ -72,22 +72,34 @@
 						<TABLE borderColor=#cccccc cellSpacing=0 cellPadding=0
 							width="100%" align=center border=0>
 							<TBODY>
-								<TR>
-									<TD height=25>
-										<TABLE cellSpacing=0 cellPadding=2 border=0>
-											<TBODY>
-												<TR>
-													<TD>联系人名称：</TD>
-													<TD><INPUT class=textbox id=sChannel2
-														style="WIDTH: 80px" maxLength=50 name="lkmName"></TD>
-													
-													<TD><INPUT class=button id=sButton2 type=submit
-														value=" 筛选 " name=sButton2></TD>
-												</TR>
-											</TBODY>
-										</TABLE>
-									</TD>
-								</TR>
+							<TR>
+								<TD height=25>
+									<TABLE cellSpacing=0 cellPadding=2 border=0>
+										<TBODY>
+										<TR>
+											<TD>联系人名称：</TD>
+											<TD><INPUT class=textbox id="lkm_name"
+													   style="WIDTH: 80px" maxLength=50 name="lkm_name"></TD>
+
+											<TD>性别：</TD>
+											<TD><select id="lkm_gender" name="lkm_gender">
+												<option value="">-请选择-</option>
+												<option value="1">男</option>
+												<option value="2">女</option>
+											</select></TD>
+
+											<TD>所属客户名称：</TD>
+											<TD><select id="customer_option" name="customer.custId">
+												<option value="">-请选择-</option>
+											</select></TD>
+
+											<TD><INPUT class=button id=sButton2 type=submit
+													   value=" 筛选 " name=sButton2></TD>
+										</TR>
+										</TBODY>
+									</TABLE>
+								</TD>
+							</TR>
 							    
 								<TR>
 									<TD>
