@@ -1,6 +1,6 @@
 package com.lori.dao;
 
-import com.lori.entity.BaseDict;
+import com.lori.domain.BaseDict;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.lori.service;
 
 import com.lori.dao.BaseDictDao;
-import com.lori.entity.BaseDict;
+import com.lori.domain.BaseDict;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

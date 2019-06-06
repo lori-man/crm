@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!--
+		name：映射类的类名
+		table：映射类对应的表名
+		catalog：数据库名，可省咯，mysql使用catalog指定数据库，如果是oralce则使用schema。
+	 -->
+    <class name="com.lori.domain.Customer" table="cst_customer" >
+        <cache usage="read-write"/>
+    <!-- 主键映射配置
+    name:指定当前映射类中的属性id对应user表的主键
+    type：指定当前映射类中的属性id的类型
+    column：指定user表的主键为id字段
+    generator：指定主键的生成策略，identity为采用数据库的主键自增长策略，常用的还有uuid、sequence等
+     -->
+        <id name="custId" type="java.lang.Long">
+            <column name="cust_id"/>
+            <generator class="identity"/>
+        </id>
+
+        <!-- 普通字段映射
+         property：custName是CstCustomer类中的属性名
+         type：指定当前映射类中的属性custName的类型
+         column：cust_name是cst_customer表中的字段名
+         -->
+        <property name="custName" type="string">
+            <column name="cust_name"></column>
+        </property>
+
+        <property name="custPhone" type="string">
+            <column name="cust_phone" length="64"></column>
+        </property>
+        <property name="custMobile" type="string">
+            <column name="cust_mobile" length="16"></column>
+        </property>
+        <property name="custImage" type="string">
+            <column name="cust_image"></column>
+        </property>
+
+        <many-to-one name="baseDicrSource" class="com.lori.domain.BaseDict" column="cust_source"></many-to-one>
+        <many-to-one name="baseDicrIndustry" column="cust_industry" class="com.lori.domain.BaseDict"></many-to-one>
+        <many-to-one name="baseDictLevel" column="cust_level" class="com.lori.domain.BaseDict"></many-to-one>
+
+        <set name="linkmen" cascade="delete" inverse="true">
+            <key column="lkm_cust_id"></key>
+            <one-to-many class="com.lori.domain.LinkMan"></one-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

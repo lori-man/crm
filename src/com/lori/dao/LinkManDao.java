@@ -1,6 +1,6 @@
 package com.lori.dao;
 
-import com.lori.entity.LinkMan;
+import com.lori.domain.LinkMan;
 import org.hibernate.criterion.DetachedCriteria;
 import org.hibernate.criterion.Projections;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;

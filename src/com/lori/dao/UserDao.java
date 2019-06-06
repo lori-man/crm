@@ -1,6 +1,6 @@
 package com.lori.dao;
 
-import com.lori.entity.User;
+import com.lori.domain.User;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 
 import java.util.List;

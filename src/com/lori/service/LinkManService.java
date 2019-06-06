@@ -1,8 +1,8 @@
 package com.lori.service;
 
 import com.lori.dao.LinkManDao;
-import com.lori.entity.LinkMan;
-import com.lori.entity.PageBean;
+import com.lori.domain.LinkMan;
+import com.lori.domain.PageBean;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

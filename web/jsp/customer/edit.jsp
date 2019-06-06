@@ -1,4 +1,4 @@
-﻿<%@ page import="com.lori.entity.Customer" %>
+﻿<%@ page import="com.lori.domain.Customer" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 		 pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
