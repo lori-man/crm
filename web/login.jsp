@@ -57,20 +57,20 @@
                                         <TR>
                                             <TD style="HEIGHT: 28px" width=80>登 录 名：</TD>
                                             <TD style="HEIGHT: 28px" width=150><INPUT id=txtName
-                                                                                      style="WIDTH: 130px" name=userName></TD>
+                                                                                      style="WIDTH: 130px" name="userName"></TD>
                                             <TD style="HEIGHT: 28px" width=370><SPAN
                                                     id=RequiredFieldValidator3
                                                     style="FONT-WEIGHT: bold; VISIBILITY: hidden; COLOR: white">请输入登录名</SPAN></TD></TR>
                                         <TR>
                                             <TD style="HEIGHT: 28px">登录密码：</TD>
                                             <TD style="HEIGHT: 28px"><INPUT id=txtPwd style="WIDTH: 130px"
-                                                                            type=password name=userPassword></TD>
+                                                                            type=password name="userPassword"></TD>
                                             <TD style="HEIGHT: 28px"><SPAN id=RequiredFieldValidator4
                                                                            style="FONT-WEIGHT: bold; VISIBILITY: hidden; COLOR: white">请输入密码</SPAN></TD></TR>
                                         <TR>
                                             <TD style="HEIGHT: 28px">账号：</TD>
                                             <TD style="HEIGHT: 28px"><INPUT id=txtcode
-                                                                            style="WIDTH: 130px" name=userCode></TD>
+                                                                            style="WIDTH: 130px" name="userCode"></TD>
                                             <TD style="HEIGHT: 28px">&nbsp;</TD></TR>
                                         <TR>
                                             <TD style="HEIGHT: 18px"></TD>

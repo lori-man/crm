@@ -34,7 +34,7 @@ public class UserController {
             //登入成功
             req.getSession().setAttribute("existUser", existUser);
 //            System.out.println(existUser.toString());
-            return "redirect:/index.jsp";
+            return "index";
         }
     }
 
@@ -43,5 +43,11 @@ public class UserController {
     public List<User> findAllUser(User user) {
         List<User> list = userService.findAllUser();
         return list;
+    }
+
+    @RequestMapping("/loginout")
+    public String loginOut(User user, HttpServletRequest req, HttpServletResponse resp) {
+        req.getSession().setAttribute("existUser", null);
+        return "index";
     }
 }

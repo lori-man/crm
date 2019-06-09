@@ -64,9 +64,9 @@
                         <TD height=35 align="right">
                             当前用户：${ existUser.userName}
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <A href="#" target=_top><FONT color=red>修改密码</FONT></A>
+                            <A href="/changepwd" target=_top><FONT color=red>修改密码</FONT></A>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <A href="#" target=_top><FONT color=red>安全退出</FONT></A>
+                            <A href="/loginout" target=_top><FONT color=red>安全退出</FONT></A>
                         </TD>
                     </TR>
                     </TBODY>
