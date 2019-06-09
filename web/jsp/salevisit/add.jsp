@@ -5,41 +5,40 @@
 <head>
 <TITLE>添加客户拜访记录</TITLE> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="MSHTML 6.00.2900.3492" name=GENERATOR>
 <LINK href="${pageContext.request.contextPath }/css/Style.css" type=text/css rel=stylesheet>
-<LINK href="${pageContext.request.contextPath }/css/Manage.css" type=text/css
-	rel=stylesheet>
+<LINK href="${pageContext.request.contextPath }/css/Manage.css" type=text/css rel=stylesheet>
 <script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-1.11.3.min.js"></script>
+    <!-- 日期插件，使用jquery -->
+    <script type="text/javascript" src="${pageContext.request.contextPath }/jquery/jquery-1.4.2.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/jquery/jquery.datepick.css" type="text/css">
+    <script type="text/javascript" src="${pageContext.request.contextPath }/jquery/jquery.datepick.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath }/jquery/jquery.datepick-zh-CN.js"></script>
 <script type="text/javascript">
-	$(function(){
-		// 异步加载客户信息
-		$.post("${pageContext.request.contextPath }/customer_findAllCustomer.action",{},function(data){
-			$(data).each(function(i,n){
-				$("#customer").append("<option value='"+n.cust_id+"'>"+n.cust_name+"</option>");
-			});
-		},"json");
-		// 异步加载用户信息
-		$.post("${pageContext.request.contextPath }/user_findAllUser.action",{},function(data){
-			$(data).each(function(i,n){
-				$("#user").append("<option value='"+n.user_id+"'>"+n.user_name+"</option>");
-			});
-		},"json");
-	});
+	$(function () {
+		$.post("/findAllCustomer",{},function (data) {
+            var str = "";
+            for (var i=0;i<data.length;i++){
+				str+="<option value='"+data[i].custId+"'>"+data[i].custName+"</option>";
+			}
+            $("#customer").append(str);
+        },"json");
+    });
+
+    $(function () {
+        $.post("/findAllUser",{},function (data) {
+            var str = "";
+            for (var i=0;i<data.length;i++){
+                str+="<option value='"+data[i].userId+"'>"+data[i].userName+"</option>";
+            }
+            $("#user").append(str);
+        },"json");
+    });
 </script>
-<!-- 日期插件，使用jquery -->
-<script type="text/javascript" src="${pageContext.request.contextPath }/jquery/jquery-1.4.2.js"></script>
-<link rel="stylesheet" href="${pageContext.request.contextPath }/jquery/jquery.datepick.css" type="text/css">
-<script type="text/javascript" src="${pageContext.request.contextPath }/jquery/jquery.datepick.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath }/jquery/jquery.datepick-zh-CN.js"></script>
-<script type="text/javascript">
-	$(function(){
-		$('#visit_time').datepick({dateFormat: 'yy-mm-dd'}); 
-		$('#visit_nexttime').datepick({dateFormat: 'yy-mm-dd'}); 
-	});
-</script>
-<META content="MSHTML 6.00.2900.3492" name=GENERATOR>
+
 </HEAD>
 <BODY>
-	<s:form id="form1" name="form1" action="saleVisit_save" namespace="/" method="post" theme="simple">
+	<form id="salevisit_form" name="salevisit_form" action="salevisit_add" method="post" theme="simple">
 
 		<TABLE cellSpacing=0 cellPadding=0 width="98%" border=0>
 			<TBODY>
@@ -71,13 +70,13 @@
 							<tr>
 								<td>拜访客户：</td>
 								<td>
-									<select name="customer.cust_id" id="customer">
+									<select name="customer.custId" id="customer">
 										<option value="">-请选择-</option>
 									</select>
 								</td>
 								<td>业务员名称：</td>
 								<td>
-									<select name="user.user_id" id="user">
+									<select name="user.userId" id="user">
 										<option value="">-请选择-</option>
 									</select>
 								</td>
@@ -86,21 +85,21 @@
 								
 								<td>拜访时间：</td>
 								<td>
-									<s:textfield readonly="true" id="visit_time" cssClass="textbox" cssStyle="WIDTH: 180px" name="visit_time" />
+									<input readonly="true" id="visit_time" cssClass="textbox" cssStyle="WIDTH: 180px" name="visit_time" />
 								</td>
 								<td>拜访地点 ：</td>
 								<td>
-								<s:textfield cssClass="textbox" id="sChannel2" cssStyle="WIDTH: 180px" maxLength="50" name="visit_addr"/>
+									<input type="text" cssClass="textbox" id="visit_addr" cssStyle="WIDTH: 180px" maxLength="50" name="visit_addr"/>
 								</td>
 							</TR>
 							<TR>
 								<td>拜访详情 ：</td>
 								<td>
-								<s:textfield cssClass="textbox" id="sChannel2" cssStyle="WIDTH: 180px" maxLength="50" name="visit_detail"/>
+								<input type="text" cssClass="textbox" id="visit_detail" cssStyle="WIDTH: 180px" maxLength="50" name="visit_detail"/>
 								</td>
 								<td>下次拜访时间 ：</td>
 								<td>
-								<s:textfield readonly="true" id="visit_nexttime" cssClass="textbox" cssStyle="WIDTH: 180px" maxLength="50" name="visit_nexttime"/>
+								<input readonly="true" id="visit_nextTime" cssClass="textbox" cssStyle="WIDTH: 180px" maxLength="50" name="visit_nextTime"/>
 								</td>
 							</TR>
 							<tr>
@@ -130,6 +129,12 @@
 				</TR>
 			</TBODY>
 		</TABLE>
-	</s:form>
+	</form>
 </BODY>
+<script type="text/javascript">
+    $(function(){
+        $('#visit_time').datepick({dateFormat: 'yy-MM-dd'});
+        $('#visit_nextTime').datepick({dateFormat: 'yy-MM-dd'});
+    });
+</script>
 </HTML>

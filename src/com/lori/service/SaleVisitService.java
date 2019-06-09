@@ -6,10 +6,12 @@ import com.lori.domain.SaleVisit;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 public class SaleVisitService {
     @Autowired
     private SaleVisitDao saleVisitDao;
@@ -41,5 +43,9 @@ public class SaleVisitService {
         pageBean.setList(list);
 
         return pageBean;
+    }
+
+    public void save(SaleVisit saleVisit) {
+        saleVisitDao.save(saleVisit);
     }
 }

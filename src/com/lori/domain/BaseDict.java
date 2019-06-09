@@ -4,6 +4,8 @@ package com.lori.domain;
  * 与customer是一对多的关系
  */
 
+import java.io.Serializable;
+
 /**
  * CREATE TABLE `base_dict` (
  *   `dict_id` varchar(32) NOT NULL COMMENT '数据字典id(主键)',
@@ -17,7 +19,7 @@ package com.lori.domain;
  *   PRIMARY KEY (`dict_id`)
  * ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
  */
-public class BaseDict {
+public class BaseDict implements Serializable {
     private String dictId;
     private String dictTypeCode;
     private String dictTypeName;

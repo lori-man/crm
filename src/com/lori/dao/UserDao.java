@@ -5,7 +5,7 @@ import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 
 import java.util.List;
 
-public class UserDao extends HibernateDaoSupport {
+public class UserDao extends BaseDao<User> {
 
     /**
      * 保存用户

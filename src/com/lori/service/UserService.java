@@ -9,6 +9,8 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional(isolation=Isolation.DEFAULT,propagation=Propagation.REQUIRED)
 public class UserService {
@@ -43,5 +45,9 @@ public class UserService {
         User user1 = userDao.login(user);
 
         return user1;
+    }
+
+    public List<User> findAllUser() {
+        return userDao.findAll();
     }
 }

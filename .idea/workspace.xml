@@ -7,87 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c507fb4-fd49-4fcf-a79f-05426a046505" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lori/dao/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lori/dao/SaleVisitDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lori/domain/SaleVisit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lori/domain/salevisit.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lori/service/SaleVisitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lori/web/SaleVisitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jquery/calendar-green.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jquery/calendar.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jquery/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jquery/jquery-1.4.2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jquery/jquery.datepick-zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jquery/jquery.datepick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jquery/jquery.datepick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsp/salevisit/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f825847-36c1-48cb-83e0-29f332f58814.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f825847-36c1-48cb-83e0-29f332f58814.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/controller/BaseDictController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/controller/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/dao/BaseDictDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/dao/BaseDictDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/dao/CustomerDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/BaseDict.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/PageBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/basedict.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/customer.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/entity/user.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/service/BaseDiceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/service/BaseDiceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/service/CustomerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/com/lori/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/springMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/WEB-INF/classes/springMvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/jsp/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/jsp/customer/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/jsp/query/salevisitlist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/jsp/query/linkmanlist.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/crm_war_exploded/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/controller/BaseDictController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/controller/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/dao/BaseDictDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/dao/BaseDictDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/dao/CustomerDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/BaseDict.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/PageBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/basedict.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/customer.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/entity/user.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/service/BaseDiceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/service/BaseDiceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/service/CustomerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/crm/com/lori/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/com/lori/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/crm/springMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/crm/springMvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/controller/BaseDictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/web/BaseDictController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/web/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/controller/LinkManController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/web/LinkManController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/dao/BaseDictDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/dao/BaseDictDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lori/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/BaseDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/BaseDict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/LinkMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/LinkMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/PageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/basedict.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/basedict.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/customer.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/customer.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/linkman.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/linkman.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/entity/user.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/user.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/service/BaseDiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/service/BaseDiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lori/service/LinkManService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/service/LinkManService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/domain/BaseDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/BaseDict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/service/SaleVisitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/service/SaleVisitService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lori/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/web/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/web/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/web/SaleVisitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/web/SaleVisitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lori/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lori/web/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/springMvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/springMvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/customer/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/query/salevisitlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/salevisit/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jquery/jquery.datepick-zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/jquery/jquery.datepick-zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/query/linkmanlist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/salevisit/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/salevisit/add.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,44 +74,38 @@
     <favorites_list name="crm" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/menu.jsp">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PrivilegeInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lori/web/interceptor/PrivilegeInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="187" column="94" selection-start-line="187" selection-start-column="94" selection-end-line="187" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/jsp/salevisit/add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1484">
-              <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaleVisitController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lori/web/SaleVisitController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            <state relative-caret-position="225">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1303#1304#0" expanded="true" />
-                <element signature="e#1345#1346#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lori/web/CustomerController.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lori/web/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="129" column="5" lean-forward="true" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+            <state relative-caret-position="550">
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="springMvc.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/springMvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -182,9 +116,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="HTML4 File" />
         <option value="Jsp File" />
         <option value="hibernate.hbm" />
+        <option value="HTML4 File" />
         <option value="Class" />
       </list>
     </option>
@@ -192,6 +126,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Transactional</find>
+      <find>visit_time</find>
+      <find>visit_nextTime</find>
+      <find>defa</find>
+      <find>default</find>
+      <find>lang</find>
+      <find>language</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,20 +140,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/js/jquery-1.11.3.min.js" />
-        <option value="$PROJECT_DIR$/src/com/lori/util/HibernateUtil.java" />
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/com/lori/dao/BaseDictDao.java" />
-        <option value="$PROJECT_DIR$/src/com/lori/entity/basedict.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/lori/entity/BaseDict.java" />
-        <option value="$PROJECT_DIR$/src/com/lori/controller/BaseDictController.java" />
-        <option value="$PROJECT_DIR$/src/com/lori/service/BaseDiceService.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/lori/entity/Demo.java" />
-        <option value="$PROJECT_DIR$/web/jsp/customer/add.jsp" />
         <option value="$PROJECT_DIR$/src/com/lori/utils/UpLoadUtils.java" />
         <option value="$PROJECT_DIR$/web/jsp/customer/demo.jsp" />
-        <option value="$PROJECT_DIR$/src/springMvc.xml" />
         <option value="$PROJECT_DIR$/web/jsp/customer/edit.jsp" />
         <option value="$PROJECT_DIR$/web/crm_hibernate20160225.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f825847-36c1-48cb-83e0-29f332f58814/console.sql" />
@@ -234,7 +162,6 @@
         <option value="2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_linkman.sql" />
         <option value="$PROJECT_DIR$/src/com/lori/controller/LinkManController.java" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f825847-36c1-48cb-83e0-29f332f58814/console_1.sql" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/SaleVisit.java" />
         <option value="$PROJECT_DIR$/src/com/lori/entity/salevisit.xml" />
@@ -244,13 +171,26 @@
         <option value="$PROJECT_DIR$/src/com/lori/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/com/lori/domain/salevisit.xml" />
         <option value="2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/sale_visit.sql" />
-        <option value="$PROJECT_DIR$/src/com/lori/service/SaleVisitService.java" />
         <option value="$PROJECT_DIR$/web/jsp/salevisit/salevisitlist.jsp" />
-        <option value="$PROJECT_DIR$/web/jsp/salevisit/add.jsp" />
         <option value="$PROJECT_DIR$/src/applicationContext.xml" />
         <option value="$PROJECT_DIR$/web/jsp/salevisit/list.jsp" />
         <option value="$PROJECT_DIR$/web/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/com/lori/web/BaseDictController.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/domain/BaseDict.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/domain/Customer.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/web/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/web/UserController.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/lori/service/UserService.java" />
+        <option value="$PROJECT_DIR$/web/jquery/demo.html" />
+        <option value="$PROJECT_DIR$/src/com/lori/service/SaleVisitService.java" />
+        <option value="$PROJECT_DIR$/web/jsp/salevisit/add.jsp" />
         <option value="$PROJECT_DIR$/src/com/lori/web/SaleVisitController.java" />
+        <option value="$PROJECT_DIR$/web/jquery/jquery.datepick.js" />
+        <option value="$PROJECT_DIR$/web/jquery/jquery.datepick-zh-CN.js" />
+        <option value="$PROJECT_DIR$/src/com/lori/web/interceptor/PrivilegeInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/springMvc.xml" />
       </list>
     </option>
   </component>
@@ -295,9 +235,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -307,6 +247,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,6 +308,15 @@
             <path>
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
               <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="lori" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -379,20 +329,7 @@
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
               <item name="crm" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crm" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="customer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
@@ -406,21 +343,19 @@
               <item name="crm" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="query" type="462c0819:PsiDirectoryNode" />
+              <item name="salevisit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="crm" type="b2602c69:ProjectViewProjectNode" />
               <item name="crm" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="salevisit" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,7 +370,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -445,11 +380,11 @@
       <recent name="com.lori.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Maven_project\git_project\crm\web\js" />
       <recent name="G:\Maven_project\git_project\crm\web" />
       <recent name="G:\Maven_project\git_project\crm\web\jsp" />
       <recent name="G:\Maven_project\git_project\crm\web\jsp\customer" />
       <recent name="G:\Maven_project\git_project\crm\web\WEB-INF\lib" />
-      <recent name="G:\Maven_project\Spring_Project\crm\web\WEB-INF\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -568,6 +503,21 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -657,7 +607,8 @@
       <workItem from="1559172849663" duration="3512000" />
       <workItem from="1559199801040" duration="31113000" />
       <workItem from="1559640260365" duration="7443000" />
-      <workItem from="1559734922111" duration="12185000" />
+      <workItem from="1559734922111" duration="41213000" />
+      <workItem from="1560063953520" duration="730000" />
     </task>
     <task id="LOCAL-00001" summary="fourth commit">
       <created>1558147104707</created>
@@ -785,11 +736,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559443776444</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="salevisit list">
+      <created>1559805117081</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1559805117082</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214394000" />
+    <option name="totallyTimeSpent" value="244152000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -804,14 +762,15 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013405" side_tool="true" weight="0.329429" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020107" side_tool="true" weight="0.35871157" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.329429" />
+      <window_info active="true" anchor="bottom" id="JRebel Console" sideWeight="0.5020107" side_tool="true" visible="true" weight="0.329429" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" sideWeight="0.49798927" visible="true" weight="0.329429" />
       <window_info id="Designer" order="5" />
-      <window_info anchor="bottom" id="SQL Generator" order="16" weight="0.32796487" />
       <window_info anchor="right" id="Database" order="4" weight="0.20710456" />
-      <window_info id="Structure" order="1" sideWeight="0.50213677" side_tool="true" weight="0.23592493" />
+      <window_info id="Structure" order="1" sideWeight="0.5045662" side_tool="true" weight="0.20844504" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
@@ -819,21 +778,24 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32796487" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.329429" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.43923867" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49865952" visible="true" weight="0.48462665" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49865952" weight="0.32503662" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731904" weight="0.35871157" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.329429" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329429" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.20844504" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49543378" visible="true" weight="0.211126" />
       <window_info anchor="bottom" id="Problems" order="14" weight="0.329429" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info id="JRebel" side_tool="true" />
       <window_info id="Favorites" order="4" sideWeight="0.50213677" side_tool="true" weight="0.23592493" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3235725" />
+      <window_info anchor="bottom" id="SQL Generator" order="16" weight="0.32796487" />
+      <window_info anchor="right" id="JRebel Setup Guide" weight="0.3297587" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32796487" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.329429" />
@@ -841,7 +803,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.329429" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3235725" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.43923867" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.35871157" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -852,21 +814,21 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32796487" />
       <window_info anchor="bottom" id="TODO" order="17" weight="0.329429" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.20844504" />
       <window_info anchor="bottom" id="Problems" order="14" weight="0.329429" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49865952" weight="0.91068816" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49865952" weight="0.32503662" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.3297587" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49543378" weight="0.20844504" />
       <window_info anchor="right" id="Database" order="4" weight="0.20710456" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Structure" order="1" sideWeight="0.50213677" side_tool="true" weight="0.23592493" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
+      <window_info id="Structure" order="1" sideWeight="0.5045662" side_tool="true" weight="0.20844504" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
       <window_info anchor="bottom" id="SQL Generator" order="16" weight="0.32796487" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -926,7 +888,8 @@
     <MESSAGE value="linkman edit" />
     <MESSAGE value="linkman delete" />
     <MESSAGE value="linkman query" />
-    <option name="LAST_COMMIT_MESSAGE" value="linkman query" />
+    <MESSAGE value="salevisit list" />
+    <option name="LAST_COMMIT_MESSAGE" value="salevisit list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -938,303 +901,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f825847-36c1-48cb-83e0-29f332f58814/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/springMvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="18" column="70" lean-forward="true" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/PageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/web/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/Manage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/customer/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/linkman/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/customer/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="122" column="69" lean-forward="true" selection-start-line="122" selection-start-column="69" selection-end-line="122" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/web/BaseDictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="55" column="19" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/LinkMan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/linkman/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="92" column="95" lean-forward="true" selection-start-line="92" selection-start-column="95" selection-end-line="92" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_linkman.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f825847-36c1-48cb-83e0-29f332f58814/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://D:/soft/java/jdk/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="731" column="51" lean-forward="true" selection-start-line="731" selection-start-column="51" selection-end-line="731" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-5.1.1.RELEASE.jar!/org/springframework/dao/support/DaoSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-orm-5.1.1.RELEASE.jar!/org/springframework/orm/hibernate5/support/HibernateDaoSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f825847-36c1-48cb-83e0-29f332f58814/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="18" column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/crm_hibernate20160225.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="173" column="36" lean-forward="true" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/customer.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="64" lean-forward="true" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/BaseDictDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1042" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1417" />
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/sys_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/SaleVisitDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/service/LinkManService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding>
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1337#1338#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/LinkManDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding>
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#1784#1785#0" expanded="true" />
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#1873#1874#0" expanded="true" />
-            <element signature="e#1917#1918#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/SaleVisit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1198#1199#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
-            <element signature="e#1317#1318#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1382#1383#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/sale_visit.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/salevisit.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/sale_visit">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_linkman">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1242,25 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lori/web/LinkManController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1271,30 +922,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jquery/calendar.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lori/service/SaleVisitService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1305,20 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/customer/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4579">
-          <caret line="193" column="57" lean-forward="true" selection-start-line="193" selection-start-column="57" selection-end-line="193" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/salevisit/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1326,29 +943,267 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/customer/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="193" column="57" lean-forward="true" selection-start-line="193" selection-start-column="57" selection-end-line="193" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="80" column="26" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-1.11.3.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/BaseDictDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/basedict.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/base_dict">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/customer.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/BaseDict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/cst_customer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/web/BaseDictController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="50" column="75" lean-forward="true" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/customer/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lori/web/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="129" column="5" lean-forward="true" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="179" column="42" lean-forward="true" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/user.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/salevisit.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/query/linkmanlist.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-ui-1.12.1/jquery-ui.structure.css" />
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-ui-1.12.1/jquery-ui.css" />
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png" />
+    <entry file="file://$PROJECT_DIR$/web/jquery/demo.html" />
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/linkman/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/salevisit/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jquery/calendar.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://2f825847-36c1-48cb-83e0-29f332f58814/schema/crm/table/sale_visit">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jquery/calendar-green.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/service/SaleVisitService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/domain/SaleVisit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lori/web/SaleVisitController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        <state relative-caret-position="185">
+          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jquery/jquery.datepick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jquery/calendar.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/salevisit/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="15" column="118" selection-start-line="15" selection-start-column="118" selection-end-line="15" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jquery/jquery-1.4.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="2105" column="75" selection-start-line="2105" selection-start-column="71" selection-end-line="2105" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jquery/jquery.datepick-zh-CN.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jquery/jquery.datepick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lori/web/interceptor/PrivilegeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1345#1346#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/salevisit/add.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/lori/web/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1484">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state relative-caret-position="550">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/springMvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
         </state>
       </provider>
     </entry>

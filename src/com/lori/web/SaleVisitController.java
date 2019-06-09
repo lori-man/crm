@@ -44,9 +44,10 @@ public class SaleVisitController {
 
 
     @RequestMapping("/salevisit_add")
-    public String add() {
-
-
+    public String add(SaleVisit saleVisit) {
+        System.out.println(saleVisit);
+        saleVisitService.save(saleVisit);
+        System.out.println();
         return "redirect:salevisit_findAll.do";
     }
 }

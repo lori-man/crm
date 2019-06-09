@@ -17,6 +17,7 @@
     <mvc:resources location="/images/" mapping="/images/**"></mvc:resources>
     <mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
     <mvc:resources location="/jsp/" mapping="/jsp/**"></mvc:resources>
+    <mvc:resources location="/jquery/" mapping="/jquery/**"></mvc:resources>
 
     <!-- MultipartResovler解析器 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -37,5 +38,14 @@
         <property name="prefix" value="/"></property>
         <property name="suffix" value=".jsp"/>
     </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/login.jsp"/>
+            <mvc:exclude-mapping path="/regist.jsp"/>
+            <bean class="com.lori.web.interceptor.PrivilegeInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 </beans>

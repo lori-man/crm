@@ -1,5 +1,6 @@
 package com.lori.domain;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,7 +16,7 @@ import java.util.Set;
  PRIMARY KEY (`cust_id`)
  ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
  */
-public class Customer {
+public class Customer implements Serializable {
     private Long custId;
     private String custName;
     private String custPhone;

@@ -10,11 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 @Controller
 public class CustomerController {
@@ -166,5 +169,20 @@ public class CustomerController {
 
         customerService.update(customer);
         return "redirect:findAll.do";
+    }
+
+    @RequestMapping("/findAllCustomer")
+    @ResponseBody
+    public List<Customer> findAllCustomer(HttpServletResponse rep) {
+        List<Customer> list = customerService.findAll();
+        if (list.size() > 0) {
+            for (Customer customer : list) {
+                customer.setLinkmen(null);
+                customer.setBaseDicrIndustry(null);
+                customer.setBaseDictLevel(null);
+                customer.setBaseDicrSource(null);
+            }
+        }
+        return list;
     }
 }
