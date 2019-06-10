@@ -1,12 +1,16 @@
 package com.lori.domain;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class SaleVisit {
     private String visit_id;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date visit_time;
     private String visit_addr;
     private String visit_detail;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date visit_nextTime;
 
     private Customer customer;

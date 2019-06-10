@@ -7,6 +7,7 @@ import com.lori.service.CustomerService;
 import com.lori.service.SaleVisitService;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -44,7 +45,7 @@ public class SaleVisitController {
 
 
     @RequestMapping("/salevisit_add")
-    public String add(SaleVisit saleVisit) {
+    public String add(@DateTimeFormat(pattern = "yyyy-MM-dd")SaleVisit saleVisit) {
         System.out.println(saleVisit);
         saleVisitService.save(saleVisit);
         System.out.println();

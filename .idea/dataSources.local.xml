@@ -11,5 +11,15 @@
       <user-name>root</user-name>
       <introspection-schemas>*:crm</introspection-schemas>
     </data-source>
+    <data-source name="ruoyi@localhost" uuid="f07dcacb-0d8f-40e8-bfb3-a482271ab719">
+      <database-info product="MySQL" version="8.0.12" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>ruoyi</user-name>
+      <introspection-schemas>*:ruoyi</introspection-schemas>
+    </data-source>
   </component>
 </project>
