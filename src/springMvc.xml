@@ -46,6 +46,11 @@
             <!--<mvc:exclude-mapping path="/regist.jsp"/>-->
             <mvc:exclude-mapping path="/register"/>
             <mvc:exclude-mapping path="/login"/>
+            <mvc:exclude-mapping path="/css/*"/>
+            <mvc:exclude-mapping path="/images/*"/>
+            <mvc:exclude-mapping path="/js/*"/>
+            <mvc:exclude-mapping path="/jsp/*"/>
+            <mvc:exclude-mapping path="/jquery/*"/>
             <bean class="com.lori.web.interceptor.PrivilegeInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>

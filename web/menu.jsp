@@ -111,7 +111,7 @@
     <TABLE cellSpacing=0 cellPadding=0 width=210 align=center border=0>
         <TBODY>
         <TR>
-            <TD width=15><IMG src="images/new_005.jpg" border=0></TD>
+            <TD width=15><IMG src="/images/new_005.jpg" border=0></TD>
             <TD align=middle width=180 background=images/new_006.jpg
                 height=35><B>人力资源 －功能菜单</B></TD>
             <TD width=15><IMG src="images/new_007.jpg" border=0></TD>
