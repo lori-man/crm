@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <context:component-scan base-package="com.lori.service,com.lori.dao"></context:component-scan>
+    <context:component-scan base-package="com.mercury.service,com.mercury.dao"></context:component-scan>
     
     <!--<bean id="datasource1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="url" value="${url}"></property>
@@ -50,35 +50,35 @@
         </property>
         <property name="mappingResources">
             <list>
-                <value>com/lori/domain/user.hbm.xml</value>
-                <value>com/lori/domain/basedict.hbm.xml</value>
-                <value>com/lori/domain/customer.hbm.xml</value>
-                <value>com/lori/domain/linkman.hbm.xml</value>
-                <value>com/lori/domain/salevisit.hbm.xml</value>
+                <value>com/mercury/domain/user.hbm.xml</value>
+                <value>com/mercury/domain/basedict.hbm.xml</value>
+                <value>com/mercury/domain/customer.hbm.xml</value>
+                <value>com/mercury/domain/linkman.hbm.xml</value>
+                <value>com/mercury/domain/salevisit.hbm.xml</value>
             </list>
         </property>
     </bean>
 
     <!--为userDao赋值sessionFactory-->
-    <bean id="userDao" class="com.lori.dao.UserDao">
+    <bean id="userDao" class="com.mercury.dao.UserDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
     <!--为customerDao赋值sessionFactory-->
-    <bean id="customerDao" class="com.lori.dao.CustomerDao">
+    <bean id="customerDao" class="com.mercury.dao.CustomerDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
     <!--为baseDictDao赋值sessionFactory-->
-    <bean id="baseDictDao" class="com.lori.dao.BaseDictDao">
+    <bean id="baseDictDao" class="com.mercury.dao.BaseDictDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
     <!--为LinkmanDao赋值sessionFactory-->
-    <bean id="linkMaDao" class="com.lori.dao.LinkManDao">
+    <bean id="linkMaDao" class="com.mercury.dao.LinkManDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
     <!--为saleVisitDao赋值sessionFactory-->
-    <bean id="saleVisitDao" class="com.lori.dao.SaleVisitDao">
+    <bean id="saleVisitDao" class="com.mercury.dao.SaleVisitDao">
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
